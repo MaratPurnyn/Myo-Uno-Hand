@@ -31,3 +31,8 @@ In total, this project costs $25-$35 for a working hand simulated on the Unity 3
 ### Pre-Glove Screenshot 
 
 <img src="Pre-Glove.png" alt="Pre-glove" style="width:500px;">
+
+### Final Glove-Setup
+
+<img src="Final-Glove.jpeg" alt="Glove" style="width:500px;">
+
