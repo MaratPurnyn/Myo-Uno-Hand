@@ -25,7 +25,7 @@ In total, this project costs $25-$35 for a working hand simulated on the Unity 3
 
 ### Pre-Glove Circuit 
 
-<img src="Pre-Glove-Circuit.jpg" alt="Pre-glove circuit" style="width:500px;">
+<img src="Pre-Glove-Circuit.JPG" alt="Pre-glove circuit" style="width:500px;">
 
 
 ### Pre-Glove Screenshot 
