@@ -2,7 +2,7 @@
 using System.Collections;
 using System.IO.Ports; 
 
-public class thumb : finger {
+public class thumb : MonoBehaviour {
 
 	SerialPort sp = new SerialPort("/dev/cu.HC-06-DevB", 9600); // Accepts data from this serial port 
 

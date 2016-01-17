@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\HandMovement.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\ColorBoxByPose.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\JointOrientation.cs" />
      <Compile Include="Assets\Myo Samples\Scripts\SampleSceneGUI.cs" />
