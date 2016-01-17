@@ -2,7 +2,7 @@
 using System.Collections;
 using System.IO.Ports; 
 
-public class thumb : MonoBehaviour {
+public class thumb : finger {
 
 	SerialPort sp = new SerialPort("/dev/cu.HC-06-DevB", 9600); // Accepts data from this serial port 
 
@@ -26,13 +26,10 @@ public class thumb : MonoBehaviour {
 
 		if (sp.IsOpen) { // Check to see if the serial port is open 
 			try {
-				// portOutput = "90,90,90,90,90," 
-				// "90,90,90,90,90,"  -> (split function) ["90", "90", "90", "90", "90"] 
-				// Split function takes in a char 
 				string portOutput = sp.ReadLine(); // get the string output of the serial port 
 				// Since this is the index finger, controlled by 1 
 				string[] output_array = portOutput.Split(','); 
-				amount = int.Parse(output_array[0]); 
+				amount = int.Parse(output_array[0]);
 
 				transform.localEulerAngles = new Vector3(amount, transform.localEulerAngles.y, transform.localEulerAngles.z);
 			} catch (System.Exception) {

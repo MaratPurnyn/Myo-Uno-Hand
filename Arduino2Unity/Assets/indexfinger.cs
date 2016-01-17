@@ -2,7 +2,7 @@
 using System.Collections;
 using System.IO.Ports;  
 
-public class indexfinger : MonoBehaviour {
+public class indexfinger : finger {
 
 	SerialPort sp = new SerialPort("/dev/cu.HC-06-DevB", 9600); // Accepts data from this serial port 
 
@@ -11,7 +11,7 @@ public class indexfinger : MonoBehaviour {
 	void Start () {
 
 		if (!sp.IsOpen) { // If the erial port is not open 
-			
+
 			sp.Open(); // Open 
 
 		}
@@ -20,7 +20,7 @@ public class indexfinger : MonoBehaviour {
 	}
 	// Initial position value 
 	float amount = 0f; 
-	
+
 	// Update is called once per frame
 	void Update () {
 
@@ -37,6 +37,6 @@ public class indexfinger : MonoBehaviour {
 			}
 
 		}
-			
+
 	}
 }
