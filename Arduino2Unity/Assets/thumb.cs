@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.IO.Ports;  
+using System.IO.Ports; 
 
-public class indexfinger : MonoBehaviour {
+public class thumb : MonoBehaviour {
 
 	SerialPort sp = new SerialPort("/dev/cu.HC-06-DevB", 9600); // Accepts data from this serial port 
 
@@ -11,7 +11,7 @@ public class indexfinger : MonoBehaviour {
 	void Start () {
 
 		if (!sp.IsOpen) { // If the erial port is not open 
-			
+
 			sp.Open(); // Open 
 
 		}
@@ -20,16 +20,19 @@ public class indexfinger : MonoBehaviour {
 	}
 	// Initial position value 
 	float amount = 0f; 
-	
+
 	// Update is called once per frame
 	void Update () {
 
 		if (sp.IsOpen) { // Check to see if the serial port is open 
 			try {
+				// portOutput = "90,90,90,90,90," 
+				// "90,90,90,90,90,"  -> (split function) ["90", "90", "90", "90", "90"] 
+				// Split function takes in a char 
 				string portOutput = sp.ReadLine(); // get the string output of the serial port 
 				// Since this is the index finger, controlled by 1 
 				string[] output_array = portOutput.Split(','); 
-				amount = int.Parse(output_array[1]);
+				amount = int.Parse(output_array[0]); 
 
 				transform.localEulerAngles = new Vector3(amount, transform.localEulerAngles.y, transform.localEulerAngles.z);
 			} catch (System.Exception) {
@@ -37,6 +40,6 @@ public class indexfinger : MonoBehaviour {
 			}
 
 		}
-			
+
 	}
 }

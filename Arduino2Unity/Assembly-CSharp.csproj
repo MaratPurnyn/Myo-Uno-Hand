@@ -61,6 +61,10 @@
      <Compile Include="Assets\finger.cs" />
      <Compile Include="Assets\hide.cs" />
      <Compile Include="Assets\indexfinger.cs" />
+     <Compile Include="Assets\middlefinger.cs" />
+     <Compile Include="Assets\pinkyfinger.cs" />
+     <Compile Include="Assets\ringfinger.cs" />
+     <Compile Include="Assets\thumb.cs" />
      <None Include="Assets\Myo\README-MyoUnity.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
