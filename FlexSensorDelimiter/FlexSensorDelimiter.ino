@@ -27,17 +27,17 @@ void loop()
   int flexSensorReading3 = analogRead(flexSensorPin3); // Flex sensor pin 3
   // Serial.println(flexSensorReading); // Print out the raw reading
 
-  //Map the values
-  int flexSensorMapped
-  int flexSensorMapped2
-  int flexSensorMapped3
+  //Map the values to values between 0 and 90 degrees
+  int flexSensorMapped = map(flexSensorReading, 30, 180, 90, 0);
+  int flexSensorMapped2 = map(flexSensorReading2, 30, 180, 90, 0);
+  int flexSensorMapped3 = map(flexSensorReading3, 30, 180, 90, 0);
 
   // Print values 
-  Serial.print(flexSensorReading); // A0  
+  Serial.print(flexSensorMapped); // A0  
   Serial.print(","); //delimiter
-  Serial.print(flexSensorReading2); // A1
+  Serial.print(flexSensorMapped2); // A1
   Serial.print(","); //delimiter
-  Serial.print(flexSensorReading3); // A2
+  Serial.print(flexSensorMapped3); // A2
   Serial.println(","); //delimiter
 
   // Delay 
