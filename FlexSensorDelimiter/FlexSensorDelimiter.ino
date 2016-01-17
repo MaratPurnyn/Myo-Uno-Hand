@@ -9,7 +9,7 @@ int flexSensorPin = A0; // The flex sensor for pin 0
 int flexSensorPin2 = A1; // The flex sensor for pin 1
 int flexSensorPin3 = A2; // The flex sensor for pin 2 
 
-// 100 == all the way bent 
+// 90 == all the way bent 
 // 0 == not bent at all 
 
 // SETUP 

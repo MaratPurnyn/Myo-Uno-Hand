@@ -1,7 +1,3 @@
-#include <IRremote.h>
-#include <IRremoteInt.h>
-#include <IRremoteTools.h>
-
 /* Arduino Flex Sensor Bend Tracking 
 *  
 * Split circuit involving a 2200 ohm resistor 
@@ -19,7 +15,7 @@ int flexSensorPin3 = A2; // The flex sensor for pin 2
 // SETUP 
 void setup() 
 {
-  Serial.begin(9600); // Start the serial transmission 
+  Serial.begin(9600); // Start the serial transmission
 }
 
 // LOOP 
