@@ -19,15 +19,15 @@ In total, this project costs $25-$35 for a working hand simulated on the Unity 3
 
 ### Fritzing Diagram 
 
+<img src="MyoUnoHand_bb.png" alt="Fritzing diagram" style="width:500px;">
 
-![](MyoUnoHand_bb.png =500x)
 
 
 ### Pre-Glove Circuit 
 
-![](Pre-Glove-Circuit.jpg =500x)
+<img src="Pre-Glove-Circuit.jpg" alt="Pre-glove circuit" style="width:500px;">
+
 
 ### Pre-Glove Screenshot 
 
-![](Pre-Glove.png =500x)
-
+<img src="Pre-Glove.png" alt="Pre-glove" style="width:500px;">
